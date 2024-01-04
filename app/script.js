@@ -1,5 +1,5 @@
 window.onload = function () {
-    fetch("https://nyt-api.fly.dev/news")
+    fetch("https://nyt-api.dev/news")
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("loader").style.display = "none";
@@ -41,4 +41,6 @@ window.onload = function () {
     const today = new Date();
     document.getElementById("date").textContent = formatDate(today);
   };
+
+
   
